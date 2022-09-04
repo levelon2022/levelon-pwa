@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/levelon-pwa/precache-manifest.24c99f52be204b9151bebb9311dce61a.js"
+  "/levelon-pwa/precache-manifest.496564674be08252fedcba024c056be9.js"
 );
 
 workbox.clientsClaim();

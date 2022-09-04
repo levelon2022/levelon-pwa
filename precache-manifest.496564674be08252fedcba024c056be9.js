@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "40696b327eab4245e674",
-    "url": "/levelon-pwa/static/css/main.5fa127b2.chunk.css"
+    "revision": "b0fcddd6077d6393cd49",
+    "url": "/levelon-pwa/static/css/main.8a54f08b.chunk.css"
   },
   {
-    "revision": "40696b327eab4245e674",
-    "url": "/levelon-pwa/static/js/main.40696b32.chunk.js"
+    "revision": "b0fcddd6077d6393cd49",
+    "url": "/levelon-pwa/static/js/main.b0fcddd6.chunk.js"
   },
   {
     "revision": "03ae7ea834bbe7645a20",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/levelon-pwa/static/media/logo.06e73328.svg"
   },
   {
-    "revision": "1148be6dc72d2562dfe34fa79c74d5f0",
+    "revision": "42bf6acc480959ac35e9a44d852cf7eb",
     "url": "/levelon-pwa/index.html"
   }
 ];

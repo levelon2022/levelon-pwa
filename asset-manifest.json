@@ -1,16 +1,15 @@
 {
-  "main.css": "/levelon-pwa/static/css/main.8a54f08b.chunk.css",
-  "main.js": "/levelon-pwa/static/js/main.b0fcddd6.chunk.js",
-  "main.js.map": "/levelon-pwa/static/js/main.b0fcddd6.chunk.js.map",
-  "static/js/1.03ae7ea8.chunk.js": "/levelon-pwa/static/js/1.03ae7ea8.chunk.js",
-  "static/js/1.03ae7ea8.chunk.js.map": "/levelon-pwa/static/js/1.03ae7ea8.chunk.js.map",
-  "static/js/2.7d894647.chunk.js": "/levelon-pwa/static/js/2.7d894647.chunk.js",
-  "static/js/2.7d894647.chunk.js.map": "/levelon-pwa/static/js/2.7d894647.chunk.js.map",
-  "runtime~main.js": "/levelon-pwa/static/js/runtime~main.6a69f11c.js",
-  "runtime~main.js.map": "/levelon-pwa/static/js/runtime~main.6a69f11c.js.map",
-  "static/media/logo.svg": "/levelon-pwa/static/media/logo.06e73328.svg",
-  "static/css/main.8a54f08b.chunk.css.map": "/levelon-pwa/static/css/main.8a54f08b.chunk.css.map",
-  "index.html": "/levelon-pwa/index.html",
-  "precache-manifest.496564674be08252fedcba024c056be9.js": "/levelon-pwa/precache-manifest.496564674be08252fedcba024c056be9.js",
-  "service-worker.js": "/levelon-pwa/service-worker.js"
+  "files": {
+    "main.css": "/levelon-pwa/static/css/main.eeb4ae37.css",
+    "main.js": "/levelon-pwa/static/js/main.5883e3b3.js",
+    "static/js/787.39c0d2ce.chunk.js": "/levelon-pwa/static/js/787.39c0d2ce.chunk.js",
+    "index.html": "/levelon-pwa/index.html",
+    "main.eeb4ae37.css.map": "/levelon-pwa/static/css/main.eeb4ae37.css.map",
+    "main.5883e3b3.js.map": "/levelon-pwa/static/js/main.5883e3b3.js.map",
+    "787.39c0d2ce.chunk.js.map": "/levelon-pwa/static/js/787.39c0d2ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eeb4ae37.css",
+    "static/js/main.5883e3b3.js"
+  ]
 }

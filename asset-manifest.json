@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/levelon-pwa/static/css/main.eeb4ae37.css",
-    "main.js": "/levelon-pwa/static/js/main.5883e3b3.js",
+    "main.js": "/levelon-pwa/static/js/main.de96b06f.js",
     "static/js/787.39c0d2ce.chunk.js": "/levelon-pwa/static/js/787.39c0d2ce.chunk.js",
     "index.html": "/levelon-pwa/index.html",
     "main.eeb4ae37.css.map": "/levelon-pwa/static/css/main.eeb4ae37.css.map",
-    "main.5883e3b3.js.map": "/levelon-pwa/static/js/main.5883e3b3.js.map",
+    "main.de96b06f.js.map": "/levelon-pwa/static/js/main.de96b06f.js.map",
     "787.39c0d2ce.chunk.js.map": "/levelon-pwa/static/js/787.39c0d2ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eeb4ae37.css",
-    "static/js/main.5883e3b3.js"
+    "static/js/main.de96b06f.js"
   ]
 }

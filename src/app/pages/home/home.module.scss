@@ -1,0 +1,8 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+.homeSection {
+    width: 100%;
+    background-color: $primary_background;
+    position:absolute;
+}

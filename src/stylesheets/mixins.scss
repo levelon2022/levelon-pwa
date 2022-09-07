@@ -34,17 +34,23 @@
 }
 
 @mixin flexCustom($justify, $alignitems) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $alignitems;
+  display: flex !important;
+  justify-content: $justify !important;
+  align-items: $alignitems !important;
 }
 
-@mixin text($family, $size, $weight, $height, $spacing) {
+@mixin text($family, $size, $color, $weight, $height, $spacing) {
   font-family: $family !important;
   font-size: $size !important;
+  color: $color !important;
   font-weight: $weight !important;
   line-height: $height !important;
   letter-spacing: $spacing !important;
+}
+
+@mixin icons($size, $color) {
+  font-size: $size !important;
+  color: $color !important;
 }
 
 @mixin commonLayoutWidth {
@@ -90,8 +96,8 @@
 }
 
 @mixin widthHeight($width, $height) {
-  width: $width;
-  height: $height;
+  width: $width !important;
+  height: $height !important;
 }
 
 @mixin ButtonLayout{

@@ -4,12 +4,14 @@
 $white: #fff;
 $black: #000;
 
-$secondary_background: #9747FF;
-$primary_background: #E1DEE3;
-$grey: #9B9B9B;
-$mine_shaft: rgba(145, 145, 145, 0.6);
-$experience: #FAFAFA;
-$stonner: #212121;
+$secondary_background: #CE222B;
+$primary_background: #F2E9E6;
+$stonner: #050303;
+$experience: #C6AFA9;
+$template: #6F060A;
+$grey: #5D5755;
+$mine_shaft: #8B8287;
+$mercury: #8B8287;
 
 $crimson: #dc0a0a;
 $skills: #ecf3ff;
@@ -20,7 +22,6 @@ $success: #6bba14;
 $agree_terms: #327644;
 $experience: #f5f5f5;
 $olive: #e3ffe8;
-$mercury: #cfcdcd;
 $concrete: #e8e6e6;
 $alabaster: #d2cbcb;
 $big_stone: #000000;
@@ -35,16 +36,15 @@ $poppins_SemiBold: 'Poppins-SemiBold';
 $poppins_Medium: 'Poppins-Medium';
 
 // font sizes
-$font_secondary: 13px;
-$font_regular: 14px;
-$font_primary: 16px;
-$font_Large: 18px;
+$font_tiny: 8px;
+$font_verysmall: 10px;
 $font_small: 12px;
-$font_verysmall: 1.0rem;
-$font_tiny: 0.8rem;
-$font_comment: 2.4rem;
-$font_medium: 2.2rem;
-$font-modal-location: 1.0rem;
+$font_primary: 14px;
+$font_regular: 16px;
+$font_secondary: 18px;
+$font_medium: 22px;
+$font_comment: 24px;
+$font_Large: 34px;
 
 // font family path
 // $roboto_regular_file: '../assets/fonts/Roboto-Regular.ttf';

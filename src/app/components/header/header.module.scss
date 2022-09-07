@@ -1,0 +1,54 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+
+.header {
+    @include widthHeight(100%, 60px);
+    background-color: $primary_background  !important;
+
+    &__items {
+        @include widthHeight(100%, 60px);
+        @include flexCustom(space-between, center);
+
+        &__logo {
+            width: 20%;
+            text-align: left;
+            color: black
+        }
+
+        &__menus {
+            width: 30%;
+            @include flexCustom(space-between, center);
+        }
+
+        &__sidebar {
+            width: 20%;
+            text-align: right;
+        }
+    }
+
+    &__switch {
+        width: 28px;
+        cursor: pointer;
+    }
+
+    &__title {
+        @include text($poppins_regular, $font_regular, $stonner, normal, 14.4px, 0.1px);
+        cursor: pointer;
+
+        &:nth-child(3) {
+            margin-right: -10px;
+            padding-left: 12px;
+            height: 26px;
+            border-left: 1px solid $mine_shaft;
+            font-size: $font_primary  !important;
+            display: flex;
+            align-items: center;
+        }
+
+        &:nth-child(5) {
+            margin-left: -10px;
+            font-size: $font_primary  !important;
+        }
+    }
+}

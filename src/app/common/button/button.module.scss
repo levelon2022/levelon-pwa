@@ -1,0 +1,17 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+.button {
+    padding: 8px 25px !important;
+    border-radius: 18px !important;
+    @include text($poppins_regular, $font_primary, $primary_background, normal, 14.4px, 0.5px);
+    text-transform: inherit;
+    background-color: $secondary_background !important;
+    border: 1.5px solid $secondary_background !important;
+
+    &:hover{
+        border: 1.5px solid $secondary_background !important;
+        background-color: $primary_background !important;
+        color: $secondary_background!important;
+    }
+}

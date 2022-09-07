@@ -1,87 +1,72 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react"
-import { styled, alpha } from "@mui/material/styles"
+// import { styled, alpha } from "@mui/material/styles"
 import AppBar from "@mui/material/AppBar"
 import Box from "@mui/material/Box"
 import Toolbar from "@mui/material/Toolbar"
-import IconButton from "@mui/material/IconButton"
+import styles from "./header.module.scss"
+// import IconButton from "@mui/material/IconButton"
 import Typography from "@mui/material/Typography"
-import InputBase from "@mui/material/InputBase"
-import MenuIcon from "@mui/icons-material/Menu"
-import SearchIcon from "@mui/icons-material/Search"
-
-const Search = styled("div")(({ theme }) => ({
-	position: "relative",
-	borderRadius: theme.shape.borderRadius,
-	backgroundColor: alpha(theme.palette.common.white, 0.15),
-	"&:hover": {
-		backgroundColor: alpha(theme.palette.common.white, 0.25),
-	},
-	marginLeft: 0,
-	width: "100%",
-	[theme.breakpoints.up("sm")]: {
-		marginLeft: theme.spacing(1),
-		width: "auto",
-	},
-}))
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-	padding: theme.spacing(0, 2),
-	height: "100%",
-	position: "absolute",
-	pointerEvents: "none",
-	display: "flex",
-	alignItems: "center",
-	justifyContent: "center",
-}))
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-	color: "inherit",
-	"& .MuiInputBase-input": {
-		padding: theme.spacing(1, 1, 1, 0),
-		// vertical padding + font size from searchIcon
-		paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-		transition: theme.transitions.create("width"),
-		width: "100%",
-		[theme.breakpoints.up("sm")]: {
-			width: "12ch",
-			"&:focus": {
-				width: "20ch",
-			},
-		},
-	},
-}))
+import { ICONS } from "../../utils/icons"
+import ButtonComponent from "../../common/button"
+import useMediaQuery from "@mui/material/useMediaQuery"
+// import ToggleOnSharpIcon from "@mui/icons-material/ToggleOnSharp"
+// import InputBase from "@mui/material/InputBase"
+// // import MenuIcon from "@mui/icons-material/Menu"
+// import SearchIcon from "@mui/icons-material/Search"
 
 const Header = () => {
+	const Tablets = useMediaQuery("(min-width:600px)")
+	// xxs: 0, // small phone
+	// xs: 300, // phone
+	// sm: 600, // tablets
+	// md: 900, // small laptop
+	// lg: 1200, // desktop
+	// xl: 1536 // large screens
+
 	return (
 		<Box sx={{ flexGrow: 1 }}>
-			<AppBar position="static">
-				<Toolbar>
-					<IconButton
-						size="large"
-						edge="start"
-						color="inherit"
-						aria-label="open drawer"
-						sx={{ mr: 2 }}
-					>
-						<MenuIcon />
-					</IconButton>
-					<Typography
-						variant="h6"
-						noWrap
-						component="div"
-						sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-					>
-              MUI
-					</Typography>
-					<Search>
-						<SearchIconWrapper>
-							<SearchIcon />
-						</SearchIconWrapper>
-						<StyledInputBase
-							placeholder="Search…"
-							inputProps={{ "aria-label": "search" }}
-						/>
-					</Search>
+			<AppBar className={styles.header}  position="static">
+				<Toolbar >
+					<Box
+						className={styles.header__items}>
+						<Box
+							component="div"
+							style={{ fontSize:"24px"}}
+							className={styles.header__items__logo}
+						>
+                        Level<span style={{color:"red", fontSize:"28px"}}>ON</span>
+						</Box>
+						<Box
+							component="div"
+							sx={{width : Tablets && "40%"}}
+							className={styles.header__items__menus}
+
+						>
+							<Typography  className={styles.header__title}>
+                            Home
+							</Typography>
+							<Typography className={styles.header__title}>
+                            My Appointments
+							</Typography>
+							<Typography className={styles.header__title}>
+                            Seeker
+							</Typography>
+							<img className={styles.header__switch} src={ICONS["TOGGLE_ON"]} alt="icon"/>
+							{/* <ToggleOnSharpIcon sx={{fontSize:"24px", color:"#CE222B !important"}} className={styles.header__switch}/> */}
+							<Typography className={styles.header__title}>
+                            Expert
+							</Typography>
+							
+						</Box>
+						<Box
+							component="div"
+							sx={{ flexGrow: 0, display: { xs: "none", sm: "block" } }}
+							className={styles.header__items__sidebar}
+						>
+							<ButtonComponent/>
+						</Box>
+					</Box>
 				</Toolbar>
 			</AppBar>
 		</Box>

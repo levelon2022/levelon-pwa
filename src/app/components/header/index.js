@@ -11,7 +11,6 @@ import { ICONS } from "../../utils/icons"
 import ButtonComponent from "../../common/button"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp"
-// import ToggleOnSharpIcon from "@mui/icons-material/ToggleOnSharp"
 // import InputBase from "@mui/material/InputBase"
 // // import MenuIcon from "@mui/icons-material/Menu"
 // import SearchIcon from "@mui/icons-material/Search"
@@ -41,7 +40,6 @@ const Header = () => {
 						{isMobile ? "" : <Box
 							component="div"
 							className={styles.header__items__menus}
-
 						>
 							<Typography  className={styles.header__title}>
                             Home
@@ -53,11 +51,9 @@ const Header = () => {
                             Seeker
 							</Typography>
 							<img className={styles.header__switch} src={ICONS["TOGGLE_ON"]} alt="icon"/>
-							{/* <ToggleOnSharpIcon sx={{fontSize:"24px", color:"#CE222B !important"}} className={styles.header__switch}/> */}
 							<Typography className={styles.header__title}>
                             Expert
 							</Typography>
-							
 						</Box>}
 						<Box
 							component="div"

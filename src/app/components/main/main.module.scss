@@ -1,0 +1,9 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+
+.main{
+    &__image{
+        @include widthHeight(100%, auto);
+    }
+}

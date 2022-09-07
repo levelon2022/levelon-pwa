@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/levelon-pwa/static/css/main.0df2f74d.css",
-    "main.js": "/levelon-pwa/static/js/main.1050cf14.js",
+    "main.css": "/levelon-pwa/static/css/main.515f310f.css",
+    "main.js": "/levelon-pwa/static/js/main.b67f149b.js",
     "static/js/787.39c0d2ce.chunk.js": "/levelon-pwa/static/js/787.39c0d2ce.chunk.js",
     "static/media/Poppins-Regular.ttf": "/levelon-pwa/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
     "static/media/Poppins-Medium.ttf": "/levelon-pwa/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
@@ -9,12 +9,12 @@
     "static/media/Poppins-ExtraBold.ttf": "/levelon-pwa/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
     "static/media/toggle-on.svg": "/levelon-pwa/static/media/toggle-on.f58ebcb0ff7fc1abeae5d53609b18b17.svg",
     "index.html": "/levelon-pwa/index.html",
-    "main.0df2f74d.css.map": "/levelon-pwa/static/css/main.0df2f74d.css.map",
-    "main.1050cf14.js.map": "/levelon-pwa/static/js/main.1050cf14.js.map",
+    "main.515f310f.css.map": "/levelon-pwa/static/css/main.515f310f.css.map",
+    "main.b67f149b.js.map": "/levelon-pwa/static/js/main.b67f149b.js.map",
     "787.39c0d2ce.chunk.js.map": "/levelon-pwa/static/js/787.39c0d2ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0df2f74d.css",
-    "static/js/main.1050cf14.js"
+    "static/css/main.515f310f.css",
+    "static/js/main.b67f149b.js"
   ]
 }

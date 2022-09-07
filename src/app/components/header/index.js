@@ -10,13 +10,14 @@ import Typography from "@mui/material/Typography"
 import { ICONS } from "../../utils/icons"
 import ButtonComponent from "../../common/button"
 import useMediaQuery from "@mui/material/useMediaQuery"
+import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp"
 // import ToggleOnSharpIcon from "@mui/icons-material/ToggleOnSharp"
 // import InputBase from "@mui/material/InputBase"
 // // import MenuIcon from "@mui/icons-material/Menu"
 // import SearchIcon from "@mui/icons-material/Search"
 
 const Header = () => {
-	const Tablets = useMediaQuery("(min-width:600px)")
+	const isMobile = useMediaQuery("(max-width: 600px)")
 	// xxs: 0, // small phone
 	// xs: 300, // phone
 	// sm: 600, // tablets
@@ -37,9 +38,8 @@ const Header = () => {
 						>
                         Level<span style={{color:"red", fontSize:"28px"}}>ON</span>
 						</Box>
-						<Box
+						{isMobile ? "" : <Box
 							component="div"
-							sx={{width : Tablets && "40%"}}
 							className={styles.header__items__menus}
 
 						>
@@ -58,13 +58,13 @@ const Header = () => {
                             Expert
 							</Typography>
 							
-						</Box>
+						</Box>}
 						<Box
 							component="div"
-							sx={{ flexGrow: 0, display: { xs: "none", sm: "block" } }}
+							// sx={{ flexGrow: 0, display: { xs: "none", sm: "block" } }}
 							className={styles.header__items__sidebar}
 						>
-							<ButtonComponent/>
+							{isMobile ? <AccountCircleSharpIcon className={styles.user__icon}/> : <ButtonComponent/>}
 						</Box>
 					</Box>
 				</Toolbar>

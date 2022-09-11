@@ -24,7 +24,6 @@ const SearchBar = () => {
 					variant="outlined"
 					InputProps={{
 						className: styles.searchBar__in,
-
 						endAdornment: (
 							<InputAdornment>
 								<IconButton>

@@ -1,12 +1,18 @@
 import React from "react"
 import BackgroundImg from "../../../assets/images/backgrounds/main.jpg"
+import Avatar from "../../../assets/images/backgrounds/avatar.png"
 import styles from "./main.module.scss"
 import Grid from "@mui/material/Grid"
 import Box from "@mui/material/Box"
 import { Typography } from "@mui/material"
 import SearchBar from "../../common/search"
+import useMediaQuery from "@mui/material/useMediaQuery"
+
 
 const MainSection = () => {
+
+	const isMobile = useMediaQuery("(max-width: 600px)")
+
 	return (
 		<div className={styles.main}>
 			<img
@@ -15,7 +21,7 @@ const MainSection = () => {
 				alt="background"
 			/>
 			<Grid className={styles.main__contents}>
-				<Box className={styles.main__contents__primary}> 
+				<Box sx={{width : isMobile && {xs: "75%"}, top: {xs:"-25px"}}} className={styles.main__contents__primary}> 
 					<Typography  className={styles.main__contents__primary__title}>
 					Choose & Connect With Experts
 					</Typography>
@@ -24,10 +30,13 @@ const MainSection = () => {
 					</Typography>
 					<SearchBar/>
 				</Box>
-				<Box className={styles.main__contents__secondary}> 
-				
-				</Box>
-
+				{ !isMobile &&	<Box className={styles.main__contents__secondary}> 
+					<img
+						src={Avatar}
+						alt="background"
+						className={styles.main__avatar}
+					/>
+				</Box>}
 			</Grid>
 		</div>
 	)

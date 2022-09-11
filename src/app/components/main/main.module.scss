@@ -6,6 +6,9 @@
     &__image{
         @include widthHeight(100%, 380px);
     }
+    &__avatar{
+        width: 75%;
+    }
     &__contents{
         @include widthHeight(100%, 380px);
         position: absolute;
@@ -16,6 +19,7 @@
             width: 32%;
             margin: 0 auto;
             text-align: left;
+            position: relative;
 
             &__title {
                  @include text($poppins_SemiBold, $font_medium, $stonner, normal, 35px, 0.1px);

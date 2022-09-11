@@ -21,7 +21,7 @@ const MainSection = () => {
 				alt="background"
 			/>
 			<Grid className={styles.main__contents}>
-				<Box sx={{width : isMobile && {xs: "75%"}, top: {xs:"-25px"}}} className={styles.main__contents__primary}> 
+				<Box sx={{width : isMobile && {xs: "75%"}, top: {xs:"-40px"}}} className={styles.main__contents__primary}> 
 					<Typography  className={styles.main__contents__primary__title}>
 					Choose & Connect With Experts
 					</Typography>

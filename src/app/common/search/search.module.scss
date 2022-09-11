@@ -1,0 +1,22 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+
+.searchBar{
+
+    width: 100%;
+    &__in{
+        height: 42px;
+        background-color: $grey !important;
+        border-radius: 10px !important;
+        color: $primary_background;
+        border: none !important;
+        @include text($poppins_regular, $font_primary, $primary_background, normal, 14.4px, 0.1px);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 10px 10px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &__icon{
+        font-size: 18px !important;
+        color: $primary_background;
+    }
+}

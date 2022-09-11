@@ -4,6 +4,32 @@
 
 .main{
     &__image{
-        @include widthHeight(100%, auto);
+        @include widthHeight(100%, 380px);
+    }
+    &__contents{
+        @include widthHeight(100%, 380px);
+        position: absolute;
+        top: 9%;
+        @include flexCenter;
+
+        &__primary {
+            width: 32%;
+            margin: 0 auto;
+            text-align: left;
+
+            &__title {
+                 @include text($poppins_SemiBold, $font_medium, $stonner, normal, 35px, 0.1px);
+                
+            }
+
+            &__description {
+                @include text($poppins_regular, $font_primary, $stonner, normal, 23px, 0.1px);
+                margin-bottom: 20px !important;
+            }
+        }
+        &__secondary {
+            width: 50%;
+            text-align: center;
+        }
     }
 }
